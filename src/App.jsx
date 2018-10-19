@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
-import HelloWorld from './components/hello-world';
+
+import TestIf from './components/test-if';
+import TestFor from './components/test-for';
+import TestChoose from './components/test-choose';
+import TestWith from './components/test-with';
 
 class App extends Component {
   constructor(props) {
@@ -9,7 +13,14 @@ class App extends Component {
   }
 
   render() {
-    return <HelloWorld title="Hello from React webpack" />;
+    return (
+      <div>
+        <TestIf />
+        <TestFor />
+        <TestChoose />
+        <TestWith />
+      </div>
+    );
   }
 }
 
